@@ -29,35 +29,29 @@ bill3=268;
 
 
 function tipc(bill){
-   
+   tipp=[];
+   tott=[];
     if(bill<50){
     
         console.log("the tip is");
         tip1=bill*0.2;
         console.log(tip1);
-       
-        tot=bill+tip1;
+        tot1=bill+tip1;
         console.log("the tot is");
-        console.log(tot);
+        console.log(tot1);
     }else if(bill>50 && bill<200){
         tip2=bill*0.15;
         console.log("the tip is");console.log(tip2);
-        
-        tot=bill+tip2;
-        
+        tot2=bill+tip2;
         console.log("the tot is");
-
-        console.log(tot);
+        console.log(tot2);
     }else if(bill>200){
         tip3=bill*0.1;
         console.log("the tip is");
         console.log(tip3);
-        
-        tot=bill+tip3;
-        
+        tot3=bill+tip3;
         console.log("the tot is");
-
-        console.log(tot);
+        console.log(tot3);
     }
     
 }
@@ -65,8 +59,10 @@ function tipc(bill){
 tipc(124);
 tipc(48);
 tipc(268);
-
-
+tipp=[tip1,tip2,tip3];
+console.log(tipp);
+tott=[tot1,tot2,tot3];
+console.log(tott);
 /*
 //objects
 var mydetails={
